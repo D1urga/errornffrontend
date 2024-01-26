@@ -2,9 +2,7 @@
   .drawer {
     display: none;
   }
-  .drawer1 {
-    display: none;
-  }
+
   .outer_div {
     position: fixed;
     z-index: 20;
@@ -208,36 +206,29 @@
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .drawer_div {
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     width: 100%;
     top: 0px;
-    left: 0;
+    right: 0;
     z-index: 33;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255, 0);
     padding-left: 9px;
   }
-  .drawer_div1 {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0;
-    z-index: 33;
-    background-color: rgb(0, 0, 0);
-    padding-left: 9px;
-    border-radius: 0px;
-  }
+
   .drawer {
     padding: 4px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    margin-top: 7px;
+    margin-right: 7px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 3px;
   }
-  .drawer1 {
-    padding: 4px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-  }
+
   .outer_div {
-    padding-top: 20px;
+    padding-top: 0px;
     position: fixed;
     z-index: 20;
     top: 0;
@@ -425,36 +416,29 @@
 }
 @media screen and (max-width: 520px) {
   .drawer_div {
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     width: 100%;
     top: 0px;
-    left: 0;
+    right: 0;
     z-index: 33;
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(255, 255, 255, 0);
     padding-left: 9px;
   }
-  .drawer_div1 {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0;
-    z-index: 33;
-    background-color: rgb(0, 0, 0);
-    padding-left: 9px;
-    border-radius: 0px;
-  }
+
   .drawer {
     padding: 4px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    margin-top: 7px;
+    margin-right: 7px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 3px;
   }
-  .drawer1 {
-    padding: 4px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-  }
+
   .outer_div {
-    padding-top: 20px;
+    padding-top: 0px;
     position: fixed;
     z-index: 20;
     top: 0;

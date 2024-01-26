@@ -35,9 +35,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div className={isOpen ? styles.drawer_div : styles.drawer_div1}>
+      <div className={styles.drawer_div}>
         <FaBars
-          className={isOpen ? styles.drawer : styles.drawer1}
+          className={styles.drawer}
           onClick={() => {
             setIsOpen(!isOpen);
           }}
