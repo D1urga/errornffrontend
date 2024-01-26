@@ -31,13 +31,11 @@ export default function PostContent({ url, title, description }) {
     let resp = await axios.get(url);
     let final = await resp.data;
     setData(final);
-    // console.log(final);
-    // alert(final);
   };
 
   useEffect(() => {
     fun();
-  }, []);
+  });
   return (
     <div className={styles.outer_div}>
       <p className={styles.title}>Title : {title}</p>

@@ -21,6 +21,7 @@ export default function Home() {
     <div className={styles.outer_div}>
       {data.map((post) => (
         <PostContent
+          key={post._id}
           url={post.content}
           title={post.title}
           description={post.description}
