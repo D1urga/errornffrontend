@@ -1,95 +1,112 @@
-import Image from "next/image";
+"use client";
 import styles from "./page.module.css";
+import PostContent from "./components/postContent.js";
+import { useState, useEffect } from "react";
+import { FaChessQueen } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  const [user, setUser] = useState();
+  const [formData, setFormData] = useState({
+    username: "",
+    password: "",
+    email: "",
+  });
+
+  const handleInputChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const response = await fetch(
+      "https://errornf.onrender.com/api/v1/users/login",
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
+    const data = await response.json();
+    localStorage.setItem("user", data.data);
+  };
+
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("user");
+    if (loggedInUser) {
+      const foundUser = JSON.stringify(loggedInUser);
+      setUser(foundUser);
+      // router.push("/dashboard");
+    }
+  }, []);
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className={styles.outer_div}>
+      <div className={styles.left_div}>
+        <div className={styles.heading}>
+          <FaChessQueen className={styles.logo} />
+          <p className={styles.title}>ErrorNF</p>
         </div>
+        <p className={styles.welcome}>
+          Community for Professionals and Students
+        </p>
+        <p className={styles.content}>
+          Coding communities are the best place to connect with like-minded
+          people and also express any doubts you might have regarding
+          programming
+        </p>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.right_div}>
+        <p className={styles.login}>Credentials</p>
+        <form onSubmit={handleSubmit}>
+          <div className={styles.inputs}>
+            <input
+              className={styles.input}
+              type="text"
+              name="username"
+              id="username"
+              placeholder="username"
+              value={formData.username}
+              onChange={handleInputChange}
+              autoComplete="true"
+            ></input>
+            <input
+              className={styles.input}
+              type="text"
+              name="email"
+              id="email"
+              placeholder="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              autoComplete="true"
+            ></input>
+            <input
+              className={styles.input}
+              type="text"
+              name="password"
+              id="password"
+              placeholder="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              autoComplete="true"
+            ></input>
+            <div className={styles.btn_div}>
+              <button className={styles.btn} type="submit">
+                login
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <p className={styles.developer}>
+        Design and Developed by anoop kumar chaudhary
+      </p>
+    </div>
   );
 }
