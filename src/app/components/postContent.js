@@ -40,7 +40,11 @@ export default function PostContent({ url, title, description }) {
     <div className={styles.outer_div}>
       <p className={styles.title}>Title : {title}</p>
       <div className={styles.post}>
-        <JSONPretty id="json-pretty" data={data}></JSONPretty>
+        <JSONPretty
+          id="json-pretty"
+          data={data}
+          className={styles.dataa}
+        ></JSONPretty>
       </div>
       <p className={styles.description}>Description : {description}</p>
       <div className={styles.operations}>

@@ -6,6 +6,7 @@
     border-radius: 10px;
     width: 37.5vw;
   }
+
   .post {
     margin: 5px;
     padding: 5px;
@@ -141,10 +142,13 @@
 @media screen and (max-width: 520px) {
   .outer_div {
     background-color: #e0f3f6;
-    padding: 5px;
+    padding: 3px;
     margin: 10px 0;
     border-radius: 10px;
     width: 94vw;
+  }
+  .dataa {
+    font-size: 11px;
   }
   .post {
     margin: 5px;
@@ -152,7 +156,7 @@
     max-height: 500px;
     min-height: 400px;
     border-radius: 10px;
-    background-color: #f5f9f8;
+    background-color: #ffffff;
     overflow: scroll;
   }
   .title {
