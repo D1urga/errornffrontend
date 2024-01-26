@@ -19,14 +19,16 @@ export default function Home() {
   }, [data]);
   return (
     <div className={styles.outer_div}>
-      {data.map((post) => (
-        <PostContent
-          key={post._id}
-          url={post.content}
-          title={post.title}
-          description={post.description}
-        />
-      ))}
+      <div className={styles.main_div}>
+        {data.map((post) => (
+          <PostContent
+            key={post._id}
+            url={post.content}
+            title={post.title}
+            description={post.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }

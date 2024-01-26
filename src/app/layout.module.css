@@ -9,12 +9,22 @@
   }
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
+  .right_div {
+    width: 100%;
+  }
+
   .outer_div {
+    width: 100%;
     display: flex;
   }
 }
 @media screen and (max-width: 520px) {
+  .right_div {
+    width: 100%;
+  }
+
   .outer_div {
+    width: 100%;
     display: flex;
   }
 }
