@@ -2,6 +2,9 @@
   .drawer {
     display: none;
   }
+  .name {
+    display: none;
+  }
 
   .outer_div {
     position: fixed;
@@ -217,7 +220,7 @@
     right: 0;
     height: 50px;
     z-index: 33;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 0 20px;
   }
   .name {
@@ -441,14 +444,12 @@
     right: 0;
     height: 40px;
     z-index: 33;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 0 20px;
   }
 
   .drawer {
     padding: 4px;
-    margin-top: 3px;
-    margin-right: 12px;
     font-size: 22px;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255);

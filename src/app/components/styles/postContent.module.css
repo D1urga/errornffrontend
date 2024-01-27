@@ -1,6 +1,6 @@
 @media screen and (min-width: 900px) {
   .outer_div {
-    background-color: #f0f0f0;
+    background-color: #c8eeeb;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -76,7 +76,7 @@
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .outer_div {
-    background-color: #f0f0f0;
+    background-color: #c8eeeb;
     padding: 10px 0;
     margin: 5px 0;
     border-radius: 8px;
@@ -149,7 +149,7 @@
 }
 @media screen and (max-width: 520px) {
   .outer_div {
-    background-color: #f0f0f0;
+    background-color: #c8eeeb;
     padding: 3px 0;
     margin: 10px 0;
     border-radius: 6px;
@@ -179,7 +179,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
   }
   .comment_box {
     display: flex;

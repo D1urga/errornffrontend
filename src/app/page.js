@@ -45,7 +45,7 @@ export default function Home() {
     if (loggedInUser) {
       const foundUser = JSON.stringify(loggedInUser);
       setUser(foundUser);
-      router.push("/dashboard");
+      // router.push("/dashboard");
     }
   }, [data]);
   return (
