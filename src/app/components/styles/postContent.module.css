@@ -1,24 +1,28 @@
 @media screen and (min-width: 900px) {
   .outer_div {
-    background-color: #e0f3f6;
+    background-color: #f0f0f0;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    width: 37.5vw;
+    width: 38vw;
+    box-shadow: rgb(162, 161, 161) 0px 0px 7px 0px;
   }
-
+  .dataa {
+    font-size: 12.5px;
+  }
   .post {
     margin: 5px;
     padding: 5px;
     max-height: 500px;
     min-height: 400px;
     border-radius: 10px;
-    background-color: #f5f9f8;
+    background-color: #ffffff;
     overflow: scroll;
   }
   .title {
     padding: 5px 10px 5px 10px;
     font-size: 14px;
+    color: rgb(0, 0, 0);
   }
   .description {
     font-size: 14px;
@@ -42,6 +46,7 @@
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     padding: 0 10px;
+    background-color: #ffffff;
   }
   .logo1 {
     font-size: 18px;
@@ -71,20 +76,23 @@
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .outer_div {
-    background-color: #e0f3f6;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-    width: 96vw;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: 8px;
+    width: 98vw;
   }
   .post {
-    margin: 5px;
-    padding: 5px;
-    max-height: 500px;
+    margin: 5px 0;
+    padding: 8px;
+    max-height: 520px;
     min-height: 400px;
-    border-radius: 10px;
-    background-color: #f5f9f8;
+
+    background-color: #ffffff;
     overflow: scroll;
+  }
+  .dataa {
+    font-size: 12px;
   }
   .title {
     padding: 5px 10px 5px 10px;
@@ -98,7 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 20px 5px 20px;
   }
   .comment_box {
     display: flex;
@@ -108,7 +116,7 @@
   .comment_field {
     border: none;
     height: 27px;
-    width: 50vw;
+    width: 60vw;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     padding: 0 10px;
@@ -141,21 +149,21 @@
 }
 @media screen and (max-width: 520px) {
   .outer_div {
-    background-color: #e0f3f6;
-    padding: 3px;
+    background-color: #f0f0f0;
+    padding: 3px 0;
     margin: 10px 0;
-    border-radius: 10px;
-    width: 94vw;
+    border-radius: 6px;
+    width: 99vw;
   }
   .dataa {
     font-size: 11px;
   }
   .post {
-    margin: 5px;
-    padding: 5px;
+    margin: 5px 0;
+    padding: 10px;
     max-height: 500px;
     min-height: 400px;
-    border-radius: 10px;
+
     background-color: #ffffff;
     overflow: scroll;
   }

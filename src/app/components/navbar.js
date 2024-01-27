@@ -36,6 +36,10 @@ export default function Navbar() {
   return (
     <div>
       <div className={styles.drawer_div}>
+        <div className={styles.name}>
+          <FaChessQueen className={styles.logo_name} />
+          <p className={styles.logo_title}>ErrorNF</p>
+        </div>
         <FaBars
           className={styles.drawer}
           onClick={() => {

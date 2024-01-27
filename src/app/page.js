@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   const [user, setUser] = useState();
+  const [data, setData] = useState(null);
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -35,6 +36,7 @@ export default function Home() {
       }
     );
     const data = await response.json();
+    setData(data.data);
     localStorage.setItem("user", data.data);
   };
 
@@ -43,9 +45,9 @@ export default function Home() {
     if (loggedInUser) {
       const foundUser = JSON.stringify(loggedInUser);
       setUser(foundUser);
-      // router.push("/dashboard");
+      router.push("/dashboard");
     }
-  }, []);
+  }, [data]);
   return (
     <div className={styles.outer_div}>
       <div className={styles.left_div}>

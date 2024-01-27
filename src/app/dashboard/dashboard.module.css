@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .outer_div {
+    padding-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,6 +30,7 @@
 }
 @media screen and (max-width: 520px) {
   .outer_div {
+    padding-top: 33px;
     width: 100%;
     display: flex;
     flex-direction: column;
