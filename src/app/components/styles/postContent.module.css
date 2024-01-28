@@ -10,6 +10,23 @@
   .dataa {
     font-size: 12.5px;
   }
+  .button1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .skelton_div {
+    background-color: rgb(209, 252, 255);
+    border-radius: 5px;
+  }
+  .skelton {
+    width: 27vw;
+    border-radius: 5px;
+    color: rgb(255, 202, 12);
+    background-color: yellow;
+  }
   .post {
     margin: 5px;
     padding: 5px;
@@ -94,6 +111,13 @@
   .dataa {
     font-size: 12px;
   }
+  .button1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
   .title {
     padding: 1px 10px 1px 10px;
     font-size: 14px;
@@ -109,6 +133,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5px 20px 1.5px 20px;
+  }
+  .skelton_div {
+    background-color: rgb(209, 252, 255);
+    border-radius: 5px;
+  }
+  .skelton {
+    width: 64vw;
+    border-radius: 5px;
+    color: rgb(255, 202, 12);
+    background-color: yellow;
   }
   .comment_box {
     display: flex;
@@ -161,6 +195,13 @@
   .dataa {
     font-size: 11px;
   }
+  .button1 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
   .post {
     margin: 5px 0;
     padding: 10px;
@@ -185,6 +226,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.5px 15px 1.5px 15px;
+  }
+  .skelton_div {
+    background-color: rgb(209, 252, 255);
+    border-radius: 5px;
+  }
+  .skelton {
+    width: 55vw;
+    border-radius: 5px;
+    color: rgb(255, 202, 12);
+    background-color: yellow;
   }
   .comment_box {
     display: flex;
