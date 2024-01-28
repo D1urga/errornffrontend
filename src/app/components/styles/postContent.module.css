@@ -76,9 +76,9 @@
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .outer_div {
-    background-color: #c0ded2;
+    background-color: #ccf1e3;
     padding: 2px 0;
-    margin: 5px 0;
+    margin: 2px 0;
     border-radius: 8px;
     width: 98vw;
   }
@@ -152,9 +152,9 @@
 }
 @media screen and (max-width: 520px) {
   .outer_div {
-    background-color: #c0ded2;
+    background-color: #ccf1e3;
     padding: 2px 0;
-    margin: 10px 0;
+    margin: 2px 0;
     border-radius: 6px;
     width: 99vw;
   }

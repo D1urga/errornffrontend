@@ -46,6 +46,7 @@ export default function PostContent({ url, title, description }) {
           className={styles.dataa}
         ></JSONPretty>
       </div>
+
       <p className={styles.description}>Description : {description}</p>
       <div className={styles.operations}>
         <FaHeart className={styles.logo1} />
