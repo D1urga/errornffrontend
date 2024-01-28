@@ -216,7 +216,7 @@
     background-color: rgb(255, 255, 255);
     overflow: scroll;
     border-radius: 1px;
-    border: 2px solid black;
+    border-top: 2px solid black;
   }
   .comment_div1 {
     display: none;
@@ -328,7 +328,7 @@
     background-color: rgb(255, 255, 255);
     overflow: scroll;
     border-radius: 1px;
-    border: 2px solid black;
+    border-top: 2px solid black;
   }
   .comment_div1 {
     display: none;
