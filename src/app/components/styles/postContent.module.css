@@ -1,6 +1,6 @@
 @media screen and (min-width: 900px) {
   .outer_div {
-    background-color: #c8eeeb;
+    background-color: rgb(240, 240, 240);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -76,8 +76,8 @@
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .outer_div {
-    background-color: #c8eeeb;
-    padding: 10px 0;
+    background-color: #c0ded2;
+    padding: 2px 0;
     margin: 5px 0;
     border-radius: 8px;
     width: 98vw;
@@ -95,18 +95,20 @@
     font-size: 12px;
   }
   .title {
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
     font-size: 14px;
+    font-weight: 500;
   }
   .description {
     font-size: 14px;
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
+    font-weight: 500;
   }
   .operations {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px 5px 20px;
+    padding: 1.5px 20px 1.5px 20px;
   }
   .comment_box {
     display: flex;
@@ -134,11 +136,12 @@
     color: white;
   }
   .view_comment {
-    padding: 5px 10px 5px 10px;
+    padding: 1.5px 10px 1.5px 10px;
     display: inline;
     user-select: none;
     font-size: 14px;
     cursor: pointer;
+    font-weight: 500;
   }
   .view_comment:hover {
     padding: 5px 10px 5px 10px;
@@ -149,8 +152,8 @@
 }
 @media screen and (max-width: 520px) {
   .outer_div {
-    background-color: #c8eeeb;
-    padding: 3px 0;
+    background-color: #c0ded2;
+    padding: 2px 0;
     margin: 10px 0;
     border-radius: 6px;
     width: 99vw;
@@ -168,18 +171,20 @@
     overflow: scroll;
   }
   .title {
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
     font-size: 14px;
+    font-weight: 500;
   }
   .description {
     font-size: 14px;
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
+    font-weight: 500;
   }
   .operations {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px 5px 15px;
+    padding: 1.5px 15px 1.5px 15px;
   }
   .comment_box {
     display: flex;
@@ -207,11 +212,12 @@
     color: white;
   }
   .view_comment {
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
     display: inline;
     user-select: none;
     font-size: 14px;
     cursor: pointer;
+    font-weight: 500;
   }
   .view_comment:hover {
     padding: 5px 10px 5px 10px;
