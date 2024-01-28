@@ -9,8 +9,9 @@ import { FaArrowRight, FaBookmark, FaHeart } from "react-icons/fa";
 import Skeleton from "@mui/material/Skeleton";
 import { CurrentUser } from "./currentUser";
 
-export default function PostContent({ url, title, description, id }) {
+export default function PostContent({ url, title, description, id, comments }) {
   const [isPosting, setIsPosting] = useState(true);
+  const [isCommentShowing, setIsCommentShowing] = useState(false);
   const [data, setData] = useState(null);
   const [formData, setFormData] = useState({
     comment: "",
@@ -94,7 +95,19 @@ export default function PostContent({ url, title, description, id }) {
         </form>
         <FaBookmark className={styles.logo1} />
       </div>
-      <p className={styles.view_comment}>View all 45 comments</p>
+      <p
+        className={styles.view_comment}
+        onClick={() => {
+          setIsCommentShowing(!isCommentShowing);
+        }}
+      >
+        View all 45 comments
+      </p>
+      <div
+        className={isCommentShowing ? styles.comment_div : styles.comment_div1}
+      >
+        {comments && comments.map((comment) => <p>{comment.comment}</p>)}
+      </div>
     </div>
   );
 }

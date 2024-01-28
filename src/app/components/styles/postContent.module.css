@@ -6,6 +6,7 @@
     border-radius: 10px;
     width: 38vw;
     box-shadow: rgb(162, 161, 161) 0px 0px 7px 0px;
+    position: relative;
   }
   .dataa {
     font-size: 12.5px;
@@ -89,6 +90,24 @@
     font-size: 14px;
     cursor: pointer;
     color: blue;
+  }
+  .comment_div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    z-index: 100;
+    height: 400px;
+    width: 94%;
+    padding: 20px;
+    left: 1vw;
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+    border-radius: 1px;
+    box-shadow: rgb(59, 59, 59) 0px 0px 6px 3px;
+  }
+  .comment_div1 {
+    display: none;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
@@ -183,6 +202,25 @@
     cursor: pointer;
     color: blue;
   }
+  .comment_div {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    left: 0vw;
+
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+    border-radius: 1px;
+    border: 2px solid black;
+  }
+  .comment_div1 {
+    display: none;
+  }
 }
 @media screen and (max-width: 520px) {
   .outer_div {
@@ -275,5 +313,24 @@
     font-size: 14px;
     cursor: pointer;
     color: blue;
+  }
+  .comment_div {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    left: 0vw;
+
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+    border-radius: 1px;
+    border: 2px solid black;
+  }
+  .comment_div1 {
+    display: none;
   }
 }
