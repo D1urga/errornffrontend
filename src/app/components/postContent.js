@@ -5,11 +5,25 @@ import axios from "axios";
 import JSONPretty from "react-json-pretty";
 import styles from "./styles/postContent.module.css";
 import CircularProgress from "@mui/material/CircularProgress";
-import { FaArrowRight, FaBookmark, FaHeart } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaBookmark,
+  FaHeart,
+  FaUserCircle,
+} from "react-icons/fa";
 import Skeleton from "@mui/material/Skeleton";
 import { CurrentUser } from "./currentUser";
+import { FaUser } from "react-icons/fa";
 
-export default function PostContent({ url, title, description, id, comments }) {
+export default function PostContent({
+  url,
+  title,
+  description,
+  id,
+  comments,
+  allComments,
+  user,
+}) {
   const [isPosting, setIsPosting] = useState(true);
   const [isCommentShowing, setIsCommentShowing] = useState(false);
   const [data, setData] = useState(null);
@@ -53,7 +67,7 @@ export default function PostContent({ url, title, description, id, comments }) {
   });
   return (
     <div className={styles.outer_div}>
-      <p className={styles.title}>Title : {title}</p>
+      <p className={styles.title}>User : {user}</p>
       <div className={styles.post}>
         <JSONPretty
           id="json-pretty"
@@ -61,7 +75,7 @@ export default function PostContent({ url, title, description, id, comments }) {
           className={styles.dataa}
         ></JSONPretty>
       </div>
-
+      <p className={styles.title}>Title : {title}</p>
       <p className={styles.description}>Description : {description}</p>
       <div className={styles.operations}>
         <FaHeart className={styles.logo1} />
@@ -101,13 +115,23 @@ export default function PostContent({ url, title, description, id, comments }) {
           setIsCommentShowing(!isCommentShowing);
         }}
       >
-        View all 45 comments
+        View all {allComments} comments
       </p>
       <div
         className={isCommentShowing ? styles.comment_div : styles.comment_div1}
       >
         {comments &&
-          comments.map((comment) => <p key={comment._id}>{comment.comment}</p>)}
+          comments.map((comment) => (
+            <div className={styles.inner_div}>
+              <FaUserCircle />
+              <p key={comment._id} className={styles.comment_data}>
+                {comment.comment}
+              </p>
+              <p key={comment._id} className={styles.comment_date}>
+                {comment.createdAt}
+              </p>
+            </div>
+          ))}
       </div>
     </div>
   );

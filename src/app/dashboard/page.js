@@ -27,6 +27,8 @@ export default function Home() {
             url={post.content}
             title={post.title}
             comments={post.comments}
+            allComments={post.totalComments}
+            user={post.Parentuser[0].fullName}
             description={post.description}
           />
         ))}
