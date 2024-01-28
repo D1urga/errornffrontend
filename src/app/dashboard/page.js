@@ -7,7 +7,7 @@ export default function Home() {
   const [data, setData] = useState([]);
   const fetchInfo = async () => {
     const res = await fetch(
-      "http://localhost:3000/api/v1/posts/getContentPost",
+      "https://errornf.onrender.com/api/v1/posts/getContentPost",
       { credentials: "include" }
     );
     const d = await res.json();
