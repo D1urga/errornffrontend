@@ -106,7 +106,8 @@ export default function PostContent({ url, title, description, id, comments }) {
       <div
         className={isCommentShowing ? styles.comment_div : styles.comment_div1}
       >
-        {comments && comments.map((comment) => <p>{comment.comment}</p>)}
+        {comments &&
+          comments.map((comment) => <p key={comment._id}>{comment.comment}</p>)}
       </div>
     </div>
   );
