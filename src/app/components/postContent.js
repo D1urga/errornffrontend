@@ -122,7 +122,7 @@ export default function PostContent({
       >
         {comments &&
           comments.map((comment) => (
-            <div className={styles.inner_div}>
+            <div key={comment._id} className={styles.inner_div}>
               <FaUserCircle />
               <p key={comment._id} className={styles.comment_data}>
                 {comment.comment}
