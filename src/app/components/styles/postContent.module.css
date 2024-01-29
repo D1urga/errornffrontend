@@ -1,10 +1,10 @@
 @media screen and (min-width: 900px) {
   .outer_div {
-    background-color: rgb(240, 240, 240);
-    margin: 10px;
+    background-color: #cfe6dd;
+    margin: 10px 0;
     border-radius: 10px;
-    width: 38vw;
-    box-shadow: rgb(162, 161, 161) 0px 0px 7px 0px;
+    width: 39vw;
+    box-shadow: rgb(126, 126, 126) 0px 0px 3px 0px;
     position: relative;
     padding: 5px 0;
   }
@@ -32,16 +32,18 @@
     padding: 10px;
     max-height: 510px;
     min-height: 400px;
-    background-color: #ffffff;
+    background-color: #fbffff;
     overflow: scroll;
   }
   .title {
     padding: 5px 10px 5px 10px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
     color: rgb(0, 0, 0);
   }
   .description {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
     padding: 5px 10px 5px 10px;
   }
   .operations {
@@ -66,7 +68,7 @@
   }
   .logo1 {
     font-size: 18px;
-    color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
   }
   .logo2 {
     font-size: 26px;
@@ -80,12 +82,15 @@
     padding: 5px 10px 5px 10px;
     display: inline;
     user-select: none;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
+
     cursor: pointer;
   }
   .view_comment:hover {
     padding: 5px 10px 5px 10px;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
     cursor: pointer;
     color: blue;
   }
@@ -129,7 +134,7 @@
 }
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .outer_div {
-    background-color: #ccf1e3;
+    background-color: #cfe6dd;
     padding: 2px 0;
     margin: 2px 0;
     border-radius: 8px;
@@ -156,11 +161,11 @@
   }
   .title {
     padding: 1px 10px 1px 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
   }
   .description {
-    font-size: 14px;
+    font-size: 13px;
     padding: 1px 10px 1px 10px;
     font-weight: 500;
   }
@@ -195,7 +200,7 @@
   }
   .logo1 {
     font-size: 18px;
-    color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
   }
   .logo2 {
     font-size: 26px;
@@ -209,7 +214,7 @@
     padding: 1.5px 10px 1.5px 10px;
     display: inline;
     user-select: none;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     font-weight: 500;
   }
@@ -287,11 +292,11 @@
   }
   .title {
     padding: 1px 10px 1px 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
   }
   .description {
-    font-size: 14px;
+    font-size: 13px;
     padding: 1px 10px 1px 10px;
     font-weight: 500;
   }
@@ -326,7 +331,7 @@
   }
   .logo1 {
     font-size: 18px;
-    color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
   }
   .logo2 {
     font-size: 26px;
@@ -340,13 +345,13 @@
     padding: 1px 10px 1px 10px;
     display: inline;
     user-select: none;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
     font-weight: 500;
   }
   .view_comment:hover {
-    padding: 5px 10px 5px 10px;
-    font-size: 14px;
+    padding: 1px 10px 1px 10px;
+    font-size: 13px;
     cursor: pointer;
     color: blue;
   }
