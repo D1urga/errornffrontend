@@ -328,7 +328,7 @@
   }
   .links2 {
     display: flex;
-    background-color: #efefef;
+    background-color: #cfe6dd;
     width: 95%;
     height: 40px;
     border-radius: 5px;
@@ -338,7 +338,7 @@
     margin: 4px 0;
   }
   .links:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: #cfe6dd;
   }
   .links_div {
     display: flex;
@@ -373,7 +373,7 @@
   .history2 {
     width: 95%;
     height: 40px;
-    background-color: #efefef;
+    background-color: #cfe6dd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,7 +381,7 @@
     border-radius: 5px;
   }
   .history:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: #cfe6dd;
   }
   .history_logo {
     color: rgb(55, 55, 55);
@@ -405,7 +405,7 @@
   .settings2 {
     width: 95%;
     height: 40px;
-    background-color: #efefef;
+    background-color: #cfe6dd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,7 +413,7 @@
     border-radius: 5px;
   }
   .settings:nth-child(1):hover {
-    background-color: rgb(191, 182, 182);
+    background-color: #cfe6dd;
   }
   .settings:nth-child(2):hover {
     background-color: rgb(243, 126, 126);
@@ -552,7 +552,7 @@
   }
   .links2 {
     display: flex;
-    background-color: #efefef;
+    background-color: #cfe6dd;
     width: 95%;
     height: 40px;
     border-radius: 5px;
@@ -562,7 +562,7 @@
     margin: 4px 0;
   }
   .links:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: #cfe6dd;
   }
   .links_div {
     display: flex;
@@ -597,7 +597,7 @@
   .history2 {
     width: 95%;
     height: 40px;
-    background-color: #efefef;
+    background-color: #cfe6dd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -605,7 +605,7 @@
     border-radius: 5px;
   }
   .history:hover {
-    background-color: rgb(240, 240, 240);
+    background-color: #cfe6dd;
   }
   .history_logo {
     color: rgb(55, 55, 55);
@@ -629,7 +629,7 @@
   .settings2 {
     width: 95%;
     height: 40px;
-    background-color: #efefef;
+    background-color: #cfe6dd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -637,7 +637,7 @@
     border-radius: 5px;
   }
   .settings:nth-child(1):hover {
-    background-color: rgb(191, 182, 182);
+    background-color: #cfe6dd;
   }
   .settings:nth-child(2):hover {
     background-color: rgb(243, 126, 126);
