@@ -8,12 +8,14 @@ import CircularProgress from "@mui/material/CircularProgress";
 import {
   FaArrowRight,
   FaBookmark,
+  FaClosedCaptioning,
+  FaCut,
   FaHeart,
   FaUserCircle,
 } from "react-icons/fa";
 import Skeleton from "@mui/material/Skeleton";
 import { CurrentUser } from "./currentUser";
-import { FaUser } from "react-icons/fa";
+import { FaUser, FaTimes } from "react-icons/fa";
 
 export default function PostContent({
   url,
@@ -124,12 +126,8 @@ export default function PostContent({
           comments.map((comment) => (
             <div key={comment._id} className={styles.inner_div}>
               <FaUserCircle />
-              <p key={comment._id} className={styles.comment_data}>
-                {comment.comment}
-              </p>
-              <p key={comment._id} className={styles.comment_date}>
-                {comment.createdAt}
-              </p>
+              <p className={styles.comment_data}>{comment.comment}</p>
+              <p className={styles.comment_date}>{comment.createdAt}</p>
             </div>
           ))}
       </div>
