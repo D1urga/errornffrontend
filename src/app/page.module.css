@@ -1,20 +1,47 @@
 @media screen and (min-width: 900px) {
+  .outmost_div {
+    position: relative;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    z-index: 300;
+  }
+  .options {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .options p {
+    padding: 5px 10px;
+  }
   .outer_div {
     position: relative;
     display: flex;
     z-index: 100;
-    width: 100%;
-    background-color: rgb(241, 255, 251);
-    height: 100vh;
+
     justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    padding: 40px 0;
   }
+
   .left_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 450px;
     height: 400px;
     padding: 30px;
-    background-color: rgb(235, 231, 231);
+    background-color: #deeee8;
+  }
+  .left_div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    background-color: #deeee8;
   }
 
   .heading {
@@ -53,11 +80,20 @@
   .right_div {
     width: 450px;
     height: 400px;
-    background-color: rgb(221, 208, 208);
+    background-color: #cfe6dd;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+  }
+  .right_div1 {
+    width: 500px;
+    height: 450px;
+    background-color: #aed1c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .input {
     display: block;
@@ -69,9 +105,24 @@
     border-radius: 5px;
     padding: 0 10px;
   }
+
+  .input1 {
+    display: block;
+    border: none;
+    margin: 5px 0;
+    height: 35px;
+    font-size: 17px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
   .login {
     font-size: 30px;
     padding: 30px;
+  }
+  .login1 {
+    font-size: 30px;
+    padding: 10px 30px;
   }
   .btn_div {
     display: flex;
@@ -86,33 +137,80 @@
     font-size: 18px;
     margin: 30px;
   }
-  .developer {
-    position: fixed;
-    bottom: 40px;
+
+  .file_div1,
+  .file_div2 {
+    width: 300px;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .file_div1 p,
+  .file_div2 p {
     font-size: 14px;
-    font-weight: 600;
+  }
+  .input2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    width: 170px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 520px) {
+  .outmost_div {
+    position: relative;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    z-index: 300;
+  }
+  .options {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .options p {
+    padding: 5px 10px;
+  }
   .outer_div {
     position: relative;
     display: flex;
-    flex-direction: column;
     z-index: 100;
-    width: 100vw;
-    background-color: rgb(241, 255, 251);
-    height: 100vh;
+
     justify-content: center;
     align-items: center;
-    padding-bottom: 60px;
+    padding: 40px 0;
   }
+
   .left_div {
     display: none;
+    flex-direction: column;
+    align-items: center;
     width: 450px;
     height: 400px;
     padding: 30px;
-    background-color: rgb(235, 231, 231);
+    background-color: #deeee8;
+  }
+  .left_div1 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    background-color: #deeee8;
   }
 
   .heading {
@@ -149,112 +247,35 @@
     font-weight: 500;
   }
   .right_div {
-    width: 450px;
-    height: 400px;
-    background-color: rgb(221, 208, 208);
+    width: 100vw;
+    height: 500px;
+    background-color: #cfe6dd;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+  }
+  .right_div1 {
+    width: 100vw;
+    height: 500px;
+    background-color: #aed1c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .input {
     display: block;
     border: none;
     margin: 5px 0;
-    height: 37px;
+    height: 40px;
     font-size: 17px;
     width: 300px;
     border-radius: 5px;
     padding: 0 10px;
   }
-  .login {
-    font-size: 28px;
-    padding: 30px;
-  }
-  .btn_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .btn {
-    border: none;
-    height: 45px;
-    width: 200px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 30px;
-  }
-  .developer {
-    position: fixed;
-    bottom: 40px;
-    font-size: 14px;
-    font-weight: 600;
-  }
-}
-@media screen and (max-width: 520px) {
-  .outer_div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    width: 100vw;
-    background-color: rgb(241, 255, 251);
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
-  }
-  .left_div {
-    display: none;
-    width: 200px;
-    height: 400px;
-    padding: 30px;
-    background-color: rgb(235, 231, 231);
-  }
 
-  .heading {
-    display: flex;
-    height: 100px;
-    width: 25vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-  }
-  .logo {
-    font-size: 50px;
-    margin: 0 5px;
-  }
-  .title {
-    font-size: 40px;
-    margin: 0 5px;
-  }
-  .welcome {
-    display: flex;
-    justify-content: center;
-    font-size: 17px;
-    margin: 20px 0;
-    font-weight: 500;
-    padding: 0 30px;
-    text-align: center;
-  }
-  .content {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-    text-align: center;
-    padding: 20px 30px;
-    font-weight: 500;
-  }
-  .right_div {
-    width: 98vw;
-    height: 400px;
-    background-color: rgb(221, 208, 208);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .input {
+  .input1 {
     display: block;
     border: none;
     margin: 5px 0;
@@ -265,8 +286,12 @@
     padding: 0 10px;
   }
   .login {
-    font-size: 28px;
+    font-size: 30px;
     padding: 30px;
+  }
+  .login1 {
+    font-size: 30px;
+    padding: 10px 30px;
   }
   .btn_div {
     display: flex;
@@ -275,17 +300,206 @@
   }
   .btn {
     border: none;
-    height: 40px;
+    height: 50px;
     width: 200px;
     border-radius: 5px;
     font-size: 18px;
     margin: 30px;
   }
-  .developer {
-    position: fixed;
-    bottom: 40px;
+
+  .file_div1,
+  .file_div2 {
+    width: 300px;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .file_div1 p,
+  .file_div2 p {
     font-size: 14px;
-    font-weight: 600;
+  }
+  .input2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    width: 170px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+  }
+}
+@media screen and (max-width: 520px) {
+  .outmost_div {
+    position: relative;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    z-index: 300;
+  }
+  .options {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .options p {
+    padding: 5px 10px;
+  }
+  .outer_div {
+    position: relative;
+    display: flex;
+    z-index: 100;
+
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .left_div {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    padding: 30px;
+    background-color: #deeee8;
+  }
+  .left_div1 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    background-color: #deeee8;
+  }
+
+  .heading {
+    display: flex;
+    height: 100px;
+    width: 25vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .logo {
+    font-size: 50px;
+    margin: 0 5px;
+  }
+  .title {
+    font-size: 40px;
+    margin: 0 5px;
+  }
+  .welcome {
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    margin: 20px 0;
+    font-weight: 500;
+    padding: 0 30px;
     text-align: center;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 30px;
+    font-weight: 500;
+  }
+  .right_div {
+    width: 100vw;
+    height: 500px;
+    background-color: #cfe6dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .right_div1 {
+    width: 100vw;
+    height: 500px;
+    background-color: #aed1c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input {
+    display: block;
+    border: none;
+    margin: 5px 0;
+    height: 40px;
+    font-size: 17px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+
+  .input1 {
+    display: block;
+    border: none;
+    margin: 5px 0;
+    height: 35px;
+    font-size: 17px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+  .login {
+    font-size: 30px;
+    padding: 30px;
+  }
+  .login1 {
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+  .btn_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 30px;
+  }
+
+  .file_div1,
+  .file_div2 {
+    width: 300px;
+    height: 40px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+    padding: 0 20px;
+    border-radius: 5px;
+  }
+  .file_div1 p,
+  .file_div2 p {
+    font-size: 14px;
+  }
+  .input2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    width: 170px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
   }
 }

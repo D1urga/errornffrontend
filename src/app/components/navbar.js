@@ -8,20 +8,14 @@ import { useRouter } from "next/navigation";
 import {
   FaAtom,
   FaBars,
-  FaBeer,
   FaBookmark,
-  FaCannabis,
   FaChessQueen,
   FaCode,
   FaCog,
-  FaDeskpro,
   FaEllipsisH,
   FaImage,
-  FaInstagram,
   FaKeyboard,
-  FaLeaf,
   FaMicrosoft,
-  FaNode,
   FaNodeJs,
   FaPlay,
   FaReact,
@@ -94,7 +88,7 @@ export default function Navbar() {
           >
             <div className={styles.links_div}>
               <FaCode className={styles.logo} />
-              <Link href="" className={styles.link}>
+              <Link href="/profiles" className={styles.link}>
                 Flutter
               </Link>
             </div>
