@@ -144,6 +144,10 @@
 }
 @media screen and (max-width: 520px) {
   .outer_div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,7 +155,6 @@
     height: 100vh;
     justify-content: flex-start;
     background-color: #ffffff;
-    overflow-y: hidden;
   }
   .search_bar {
     height: 40px;
@@ -167,7 +170,7 @@
   .users_div {
     border-radius: 10px;
     width: 95vw;
-    height: 83vh;
+    height: 80vh;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border: 10px solid white;
