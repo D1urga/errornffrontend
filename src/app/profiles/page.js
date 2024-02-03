@@ -40,7 +40,7 @@ export default function Profiles() {
           className={styles.search_bar}
           type="text"
           onChange={inputHandler}
-          placeholder="ex .. nixx_1"
+          placeholder="ex.. anoop_369"
         ></input>
       </div>
       <div className={styles.users_div}>

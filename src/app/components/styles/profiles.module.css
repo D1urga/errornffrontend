@@ -74,31 +74,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
     height: 100vh;
     justify-content: flex-start;
-
     background-color: #ffffff;
   }
   .search_bar {
-    height: 45px;
-    width: 85vw;
-    border-radius: 10px;
+    position: fixed;
+    top: 10px;
+    right: 53px;
+    z-index: 200;
+    height: 30px;
+    width: 47vw;
+    border-radius: 15px;
+
     border: none;
     background-color: #ffffff;
     padding: 0 10px;
-    margin: 20px;
-    font-size: 16px;
-    box-shadow: rgb(189, 189, 189) 0px 0px 6px 0px;
+    /* margin: 45px 0 15px 0; */
+    font-size: 14px;
+    font-weight: 500;
+    /* box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px; */
   }
   .users_div {
     border-radius: 10px;
-    width: 95vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
+
     padding: 10px;
-    border: 10px solid white;
-    box-shadow: rgb(189, 189, 189) 0px 0px 8px 0px;
+    /* border: 10px solid white; */
+    border-top: 45px solid white;
+    box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px;
     overflow-y: hidden;
   }
   .users_div:hover {
@@ -110,7 +116,7 @@
     align-items: center;
     margin: 5px;
     border-radius: 6px;
-    padding: 5px 20px;
+    padding: 5px 5px;
     /* background-color: #cfe6dd; */
     /* box-shadow: rgb(169, 168, 168) 0px 0px 1px 0px; */
   }
@@ -157,7 +163,7 @@
     right: 50px;
     z-index: 200;
     height: 25px;
-    width: 47vw;
+    width: 48vw;
     border-radius: 15px;
 
     border: none;

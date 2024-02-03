@@ -221,7 +221,7 @@
     height: 50px;
     z-index: 33;
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 0 20px;
+    padding: 0 15px;
   }
   .name {
     display: flex;
@@ -445,7 +445,7 @@
     height: 40px;
     z-index: 33;
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .drawer {
