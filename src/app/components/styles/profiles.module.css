@@ -96,14 +96,13 @@
     /* box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px; */
   }
   .users_div {
-    border-radius: 10px;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-
+    background-color: rgb(241, 239, 239);
     padding: 10px;
+
     /* border: 10px solid white; */
-    border-top: 45px solid white;
+    border-top: 45px solid rgb(255, 255, 255);
     box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px;
     overflow-y: hidden;
   }
@@ -175,14 +174,13 @@
     /* box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px; */
   }
   .users_div {
-    border-radius: 10px;
     width: 100vw;
     height: 100vh;
     background-color: rgb(255, 255, 255);
 
     padding: 10px;
     /* border: 10px solid white; */
-    border-top: 45px solid white;
+    border-top: 45px solid rgb(255, 255, 255);
     box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px;
     overflow-y: hidden;
   }
