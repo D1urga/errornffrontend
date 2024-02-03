@@ -153,27 +153,28 @@
   }
   .search_bar {
     position: fixed;
-    top: 5px;
-    right: 60px;
+    top: 7.5px;
+    right: 50px;
     z-index: 200;
-    height: 30px;
-    width: 50vw;
+    height: 25px;
+    width: 45vw;
     border-radius: 4px;
     border: none;
     background-color: #ffffff;
-    padding: 0 10px;
+    padding: 0 5px;
     /* margin: 45px 0 15px 0; */
     font-size: 16px;
     /* box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px; */
   }
   .users_div {
     border-radius: 10px;
-    width: 96vw;
-    height: 92vh;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
-    margin-top: 45px;
+
     padding: 10px;
-    border: 10px solid white;
+    /* border: 10px solid white; */
+    border-top: 45px solid white;
     box-shadow: rgb(189, 189, 189) 0px 0px 4px 0px;
     overflow-y: hidden;
   }
