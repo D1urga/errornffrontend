@@ -154,7 +154,7 @@
   }
   .search_bar {
     height: 40px;
-    width: 80vw;
+    width: 90vw;
     border-radius: 10px;
     border: none;
     background-color: #ffffff;
@@ -165,8 +165,8 @@
   }
   .users_div {
     border-radius: 10px;
-    width: 97vw;
-    height: 83vh;
+    width: 95vw;
+    height: 70vh;
     background-color: rgb(255, 255, 255);
     padding: 10px;
     border: 10px solid white;
