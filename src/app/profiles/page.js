@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "../components/styles/profiles.module.css";
 import { useState, useEffect } from "react";
+import { FaEllipsisH, FaEllipsisV } from "react-icons/fa";
 
 export default function Profiles() {
   const [inputText, setInputText] = useState("");
@@ -23,7 +24,7 @@ export default function Profiles() {
   };
   const filterdData = data.filter((el) => {
     if (inputText == "") {
-      return el;
+      return null;
     } else {
       return el.username.toLowerCase().includes(inputText);
     }
@@ -46,9 +47,14 @@ export default function Profiles() {
         {filterdData &&
           filterdData.map((user) => (
             <div className={styles.profile_div} key={user._id}>
-              <img src={user.avatar} className={styles.dp}></img>
-              <p>{user.username}</p>
-              <p>{user.fullName}</p>
+              <div className={styles.username}>
+                <img src={user.avatar} className={styles.dp}></img>
+                <div className={styles.name_div}>
+                  <p>{user.username}</p>
+                  <p>{user.fullName}</p>
+                </div>
+              </div>
+              <FaEllipsisV className={styles.logo} />
             </div>
           ))}
       </div>
