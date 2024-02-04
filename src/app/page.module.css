@@ -423,29 +423,30 @@
 }
 @media screen and (max-width: 520px) {
   .option1 {
-    padding: 10px 30px;
-    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    background-color: rgb(244, 243, 243);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .option11 {
-    padding: 10px 30px;
-    background-color: rgba(255, 255, 255);
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
   }
   .option2 {
     padding: 10px 15px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(244, 243, 243);
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .option21 {
     padding: 10px 15px;
     background-color: rgb(255, 255, 255);
-
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
   }
@@ -457,7 +458,7 @@
     z-index: 300;
     overflow: hidden;
 
-    background-image: url("https://t3.ftcdn.net/jpg/05/56/56/52/360_F_556565246_qP276gbC7lWqUw2uWLTWldDTzr76IGOv.jpg");
+    /* background-image: url("https://t3.ftcdn.net/jpg/05/56/56/52/360_F_556565246_qP276gbC7lWqUw2uWLTWldDTzr76IGOv.jpg"); */
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -533,20 +534,22 @@
   .right_div {
     width: 100vw;
     height: 500px;
-    background-color: rgba(33, 35, 48, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: rgb(162, 161, 161) 0px 0px 6px 0px;
   }
   .right_div1 {
     width: 100vw;
     height: 500px;
-    background-color: rgba(33, 35, 48, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: rgb(162, 161, 161) 0px 0px 6px 0px;
   }
   .input {
     display: block;
@@ -558,12 +561,13 @@
     width: 350px;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: rgba(0, 0, 0, 1);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px;
   }
   .input:focus,
   .input1:focus {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
   }
 
   .input1 {
@@ -576,24 +580,27 @@
     font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px;
   }
   .login {
     margin: 30px 0;
     font-size: 25px;
     padding: 10px 30px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 5px;
+    box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px;
   }
   .login1 {
     margin: 25px 0;
     font-size: 25px;
     padding: 10px 30px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 5px;
+    box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px;
   }
   .btn_div {
     display: flex;
@@ -609,16 +616,17 @@
     font-size: 13px;
     font-weight: bold;
     margin: 30px;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 300ms ease-in-out;
+    box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px;
   }
 
   .file_div1,
   .file_div2 {
     width: 350px;
     height: 40px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     /* color: white; */
     display: flex;
     justify-content: space-between;
@@ -626,6 +634,7 @@
     margin: 4px 0;
     padding: 0 20px;
     border-radius: 5px;
+    box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px;
   }
   .file_div1 p,
   .file_div2 p {
@@ -636,8 +645,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: block;
     /* border: 2px solid rgb(255, 255, 255); */
     width: 170px;
