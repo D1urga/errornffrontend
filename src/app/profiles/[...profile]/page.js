@@ -58,7 +58,7 @@ export default function Profile({ params }) {
         <p>This account is private</p>
         <p>{`Follow ${decodeURIComponent(
           params.profile[0]
-        )} to see their posts and other content`}</p>
+        )} to see their content`}</p>
       </div>
     </div>
   );
