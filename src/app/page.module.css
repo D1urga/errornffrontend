@@ -1,27 +1,27 @@
 @media screen and (min-width: 900px) {
   .option1 {
     padding: 10px 30px;
-    background-color: #90c2e7;
+    background-color: #c2e2da;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   .option11 {
     padding: 10px 30px;
-    background-color: #d5ebff;
+    background-color: #d4eee7;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
   }
   .option2 {
     padding: 10px 15px;
-    background-color: #90c2e7;
+    background-color: #c2e2da;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   .option21 {
     padding: 10px 15px;
-    background-color: #d5ebff;
+    background-color: #d4eee7;
 
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
@@ -138,7 +138,11 @@
     width: 300px;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #e4eff2;
+    background-color: #f9fcfc;
+  }
+  .input:focus,
+  .input1:focus {
+    background-color: #f9fcfc;
   }
 
   .input1 {
@@ -151,7 +155,7 @@
     font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #e4eff2;
+    background-color: #f9fcfc;
   }
   .login {
     font-size: 30px;
@@ -218,29 +222,34 @@
 
 @media screen and (max-width: 900px) and (min-width: 520px) {
   .option1 {
-    padding: 10px 30px;
-    background-color: #90c2e7;
+    padding: 10px 15px;
+    background-color: #cfe6dd;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .option11 {
-    padding: 10px 30px;
-    background-color: #d5ebff;
+    padding: 10px 15px;
+    background-color: #e8f4f0;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
+  }
+  .tag {
+    padding-top: 10px;
+    font-size: 14px;
   }
   .option2 {
     padding: 10px 15px;
-    background-color: #90c2e7;
+    background-color: #cfe6dd;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    color: white;
+    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .option21 {
     padding: 10px 15px;
-    background-color: #d5ebff;
-
+    background-color: #e8f4f0;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
   }
@@ -252,7 +261,7 @@
     z-index: 300;
     overflow: hidden;
 
-    background-image: url("https://t3.ftcdn.net/jpg/05/56/98/92/360_F_556989229_lBBasUTWiFGKyhyeUXiFcQSY0IJYAKRv.jpg");
+    /* background-image: url("https://t3.ftcdn.net/jpg/05/56/56/52/360_F_556565246_qP276gbC7lWqUw2uWLTWldDTzr76IGOv.jpg"); */
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -328,20 +337,22 @@
   .right_div {
     width: 100vw;
     height: 500px;
-    background-color: #c2e2da;
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    /* box-shadow: rgb(162, 161, 161) 0px 0px 6px 0px; */
   }
   .right_div1 {
     width: 100vw;
     height: 500px;
-    background-color: #c2e2da;
+    background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    /* box-shadow: rgb(162, 161, 161) 0px 0px 6px 0px; */
   }
   .input {
     display: block;
@@ -350,10 +361,16 @@
     height: 40px;
     font-size: 13px;
     font-weight: 500;
-    width: 350px;
+    width: 400px;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #e4eff2;
+    background-color: #cfe6dd;
+    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
+  }
+  .input:focus,
+  .input1:focus {
+    background-color: #cfe6dd;
   }
 
   .input1 {
@@ -362,19 +379,39 @@
     margin: 5px 0;
     height: 35px;
     font-size: 13px;
-    width: 350px;
+    width: 400px;
     font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #e4eff2;
+    background-color: #cfe6dd;
+    color: rgb(0, 0, 0);
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .login {
+    margin: 30px 0;
+    font-size: 22px;
+    padding: 10px 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(73, 73, 73);
+    border-radius: 5px;
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
     font-size: 30px;
-    padding: 30px;
+    color: rgb(73, 73, 73);
   }
   .login1 {
-    font-size: 30px;
-    padding: 30px 30px;
+    margin: 25px 0;
+    font-size: 22px;
+    padding: 10px 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(73, 73, 73);
+    border-radius: 5px;
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .btn_div {
     display: flex;
@@ -390,41 +427,42 @@
     font-size: 13px;
     font-weight: bold;
     margin: 30px;
-    background-color: #e4eff2;
+    background-color: #e8f4f0;
+    color: rgb(0, 0, 0);
+    border: 3px solid #cfe6dd;
     transition: 300ms ease-in-out;
-  }
-  .btn:hover {
-    background-color: white;
-    transition: 300ms ease-in-out;
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
 
   .file_div1,
   .file_div2 {
-    width: 350px;
+    width: 400px;
     height: 40px;
-    background-color: #e4eff2;
+    background-color: #cfe6dd;
+    /* color: white; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 4px 0;
     padding: 0 20px;
     border-radius: 5px;
+    /* box-shadow: rgb(141, 140, 140) 0px 0px 3px 0px; */
   }
   .file_div1 p,
   .file_div2 p {
     font-size: 14px;
-    color: grey;
+    color: rgb(117, 117, 117);
   }
   .input2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e4eff2;
+    background-color: #cfe6dd;
+    color: rgb(101, 100, 100);
     display: block;
     /* border: 2px solid rgb(255, 255, 255); */
     width: 170px;
     font-size: 12px;
-    color: rgb(117, 116, 116);
   }
 }
 @media screen and (max-width: 520px) {
