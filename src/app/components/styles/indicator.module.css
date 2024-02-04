@@ -1,49 +1,153 @@
-.animations {
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
-  /* padding-top: 20px; */
-  background-color: #e4eff2;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 75px;
-  padding-bottom: 19px;
-  border-radius: 5px;
-}
-.animation1,
-.animation2,
-.animation3,
-.animation4 {
-  height: 6.5px;
-  width: 6.5px;
-  border-radius: 3px;
-  background-color: rgb(0, 0, 0);
-}
-.animation1 {
-  animation: shake 1s ease-in-out infinite both;
-}
-.animation2 {
-  animation: shake 1s ease-in-out infinite both;
-  animation-delay: 0.2s;
-}
-.animation3 {
-  animation: shake 1s ease-in-out infinite both;
-  animation-delay: 0.4s;
-}
-.animation4 {
-  animation: shake 1s ease-in-out infinite both;
-  animation-delay: 0.6s;
-}
+@media screen and (min-width: 900px) {
+  .animations {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    /* padding-top: 20px; */
+    background-color: #e4eff2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 75px;
+    padding-bottom: 19px;
+    border-radius: 5px;
+  }
+  .animation1,
+  .animation2,
+  .animation3,
+  .animation4 {
+    height: 6.5px;
+    width: 6.5px;
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+  }
+  .animation1 {
+    animation: shake 1s ease-in-out infinite both;
+  }
+  .animation2 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.2s;
+  }
+  .animation3 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.4s;
+  }
+  .animation4 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.6s;
+  }
 
-@keyframes shake {
-  0% {
-    transform: translate(0);
+  @keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(0px, 20px);
+    }
+    100% {
+      transform: translate(0);
+    }
   }
-  50% {
-    transform: translate(0px, 20px);
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .animations {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    /* padding-top: 20px; */
+    background-color: #e4eff2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 75px;
+    padding-bottom: 19px;
+    border-radius: 5px;
   }
-  100% {
-    transform: translate(0);
+  .animation1,
+  .animation2,
+  .animation3,
+  .animation4 {
+    height: 6.5px;
+    width: 6.5px;
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+  }
+  .animation1 {
+    animation: shake 1s ease-in-out infinite both;
+  }
+  .animation2 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.2s;
+  }
+  .animation3 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.4s;
+  }
+  .animation4 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.6s;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(0px, 20px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .animations {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    /* padding-top: 20px; */
+    background-color: rgb(20, 20, 20, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 75px;
+    padding-bottom: 19px;
+    border-radius: 5px;
+  }
+  .animation1,
+  .animation2,
+  .animation3,
+  .animation4 {
+    height: 6.5px;
+    width: 6.5px;
+    border-radius: 3px;
+    background-color: rgb(250, 249, 249);
+  }
+  .animation1 {
+    animation: shake 1s ease-in-out infinite both;
+  }
+  .animation2 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.2s;
+  }
+  .animation3 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.4s;
+  }
+  .animation4 {
+    animation: shake 1s ease-in-out infinite both;
+    animation-delay: 0.6s;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(0px, 20px);
+    }
+    100% {
+      transform: translate(0);
+    }
   }
 }

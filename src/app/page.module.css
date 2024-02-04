@@ -246,7 +246,7 @@
     z-index: 300;
     overflow: hidden;
 
-    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3917.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1707004800&semt=ais");
+    background-image: url("https://t3.ftcdn.net/jpg/05/56/98/92/360_F_556989229_lBBasUTWiFGKyhyeUXiFcQSY0IJYAKRv.jpg");
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -424,27 +424,27 @@
 @media screen and (max-width: 520px) {
   .option1 {
     padding: 10px 30px;
-    background-color: #90c2e7;
+    background-color: rgb(20, 20, 20, 0.9);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
     color: white;
   }
   .option11 {
     padding: 10px 30px;
-    background-color: #d5ebff;
+    background-color: rgba(172, 170, 170, 0.8);
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
   }
   .option2 {
     padding: 10px 15px;
-    background-color: #90c2e7;
+    background-color: rgb(20, 20, 20, 0.9);
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     color: white;
   }
   .option21 {
     padding: 10px 15px;
-    background-color: #d5ebff;
+    background-color: rgba(172, 170, 170, 0.8);
 
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
@@ -457,7 +457,7 @@
     z-index: 300;
     overflow: hidden;
 
-    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3917.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1707004800&semt=ais");
+    background-image: url("https://t3.ftcdn.net/jpg/05/56/98/92/360_F_556989229_lBBasUTWiFGKyhyeUXiFcQSY0IJYAKRv.jpg");
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -533,7 +533,7 @@
   .right_div {
     width: 100vw;
     height: 500px;
-    background-color: #c2e2da;
+    background-color: rgba(63, 63, 63, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -542,7 +542,7 @@
   .right_div1 {
     width: 100vw;
     height: 500px;
-    background-color: #c2e2da;
+    background-color: rgba(63, 63, 63, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -558,7 +558,8 @@
     width: 350px;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #e4eff2;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: white;
   }
 
   .input1 {
@@ -571,15 +572,24 @@
     font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
-    background-color: #e4eff2;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: white;
   }
   .login {
+    margin: 30px 0;
     font-size: 30px;
-    padding: 30px;
+    padding: 10px 30px;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: rgb(154, 151, 151);
+    border-radius: 5px;
   }
   .login1 {
+    margin: 25px 0;
     font-size: 30px;
-    padding: 30px 30px;
+    padding: 10px 30px;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: rgb(154, 151, 151);
+    border-radius: 5px;
   }
   .btn_div {
     display: flex;
@@ -595,11 +605,8 @@
     font-size: 13px;
     font-weight: bold;
     margin: 30px;
-    background-color: #e4eff2;
-    transition: 300ms ease-in-out;
-  }
-  .btn:hover {
-    background-color: white;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: white;
     transition: 300ms ease-in-out;
   }
 
@@ -607,7 +614,8 @@
   .file_div2 {
     width: 350px;
     height: 40px;
-    background-color: #e4eff2;
+    background-color: rgb(20, 20, 20, 0.8);
+    /* color: white; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -624,11 +632,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e4eff2;
+    background-color: rgb(20, 20, 20, 0.8);
+    color: white;
     display: block;
     /* border: 2px solid rgb(255, 255, 255); */
     width: 170px;
     font-size: 12px;
-    color: rgb(117, 116, 116);
   }
 }
