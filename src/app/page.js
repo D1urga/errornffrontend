@@ -138,7 +138,10 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.right_div}>
-            <p className={styles.login}>Credentials</p>
+            <div className={styles.intro}>
+              <FaChessQueen className={styles.logo} />
+              <p className={styles.login1}>Credentials</p>
+            </div>
             <form onSubmit={handleSubmit}>
               <div className={styles.inputs}>
                 <input
@@ -201,7 +204,10 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.right_div1}>
-            <p className={styles.login1}>Credentials</p>
+            <div className={styles.intro}>
+              <FaChessQueen className={styles.logo} />
+              <p className={styles.login1}>Credentials</p>
+            </div>
             <form onSubmit={handleSubmitRegister}>
               <div className={styles.inputs1}>
                 <input
