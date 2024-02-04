@@ -46,16 +46,21 @@ export default function Profiles() {
       <div className={styles.users_div}>
         {filterdData &&
           filterdData.map((user) => (
-            <div className={styles.profile_div} key={user._id}>
-              <div className={styles.username}>
-                <img src={user.avatar} className={styles.dp}></img>
-                <div className={styles.name_div}>
-                  <p>{user.username}</p>
-                  <p>{user.fullName}</p>
+            <Link
+              key={user._id}
+              href={`/profiles/${user.username}/${user.fullName}/${user.avatar}`}
+            >
+              <div className={styles.profile_div}>
+                <div className={styles.username}>
+                  <img src={user.avatar} className={styles.dp}></img>
+                  <div className={styles.name_div}>
+                    <p>{user.username}</p>
+                    <p>{user.fullName}</p>
+                  </div>
                 </div>
+                <FaEllipsisV className={styles.logo} />
               </div>
-              <FaEllipsisV className={styles.logo} />
-            </div>
+            </Link>
           ))}
       </div>
     </div>

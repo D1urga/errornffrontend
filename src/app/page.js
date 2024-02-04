@@ -5,12 +5,15 @@ import { useState, useEffect } from "react";
 import { FaChessQueen } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import Indicator from "./components/indicator";
 
 export default function Home() {
   const [isRegistering, setisRegistering] = useState(true);
   const router = useRouter();
   const [user, setUser] = useState();
   const [data, setData] = useState(null);
+  const [currentValue, setCurrentValue] = useState(true);
+  const [currentValue1, setCurrentValue1] = useState(true);
 
   const [formData, setFormData] = useState({
     username: "",
@@ -49,6 +52,7 @@ export default function Home() {
 
   const handleSubmitRegister = async (event) => {
     event.preventDefault();
+    setCurrentValue1(false);
     const formData = new FormData();
     formData.append("avatar", avatar);
     formData.append("coverImage", coverImage);
@@ -66,10 +70,12 @@ export default function Home() {
     } catch (error) {
       console.log(error);
     }
+    setCurrentValue1(true);
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setCurrentValue(false);
     const response = await fetch(
       "https://errornf.onrender.com/api/v1/users/login",
       {
@@ -84,6 +90,7 @@ export default function Home() {
     const data = await response.json();
     setData(data.data);
     localStorage.setItem("user", data.data);
+    setCurrentValue(true);
   };
 
   useEffect(() => {
@@ -98,6 +105,7 @@ export default function Home() {
     <div className={styles.outmost_div}>
       <div className={styles.options}>
         <p
+          className={isRegistering ? styles.option1 : styles.option11}
           onClick={() => {
             setisRegistering(true);
           }}
@@ -105,6 +113,7 @@ export default function Home() {
           login
         </p>
         <p
+          className={!isRegistering ? styles.option2 : styles.option21}
           onClick={() => {
             setisRegistering(false);
           }}
@@ -163,9 +172,13 @@ export default function Home() {
                   autoComplete="true"
                 ></input>
                 <div className={styles.btn_div}>
-                  <button className={styles.btn} type="submit">
-                    login
-                  </button>
+                  {currentValue ? (
+                    <button className={styles.btn} type="submit">
+                      login
+                    </button>
+                  ) : (
+                    <Indicator />
+                  )}
                 </div>
               </div>
             </form>
@@ -192,7 +205,7 @@ export default function Home() {
             <form onSubmit={handleSubmitRegister}>
               <div className={styles.inputs1}>
                 <input
-                  className={styles.input}
+                  className={styles.input1}
                   type="text"
                   name="username"
                   id="username"
@@ -260,9 +273,13 @@ export default function Home() {
                   ></input>
                 </div>
                 <div className={styles.btn_div}>
-                  <button className={styles.btn} type="submit">
-                    signIn
-                  </button>
+                  {currentValue1 ? (
+                    <button className={styles.btn} type="submit">
+                      signIn
+                    </button>
+                  ) : (
+                    <Indicator />
+                  )}
                 </div>
               </div>
             </form>

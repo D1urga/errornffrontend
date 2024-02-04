@@ -1,10 +1,43 @@
 @media screen and (min-width: 900px) {
+  .option1 {
+    padding: 10px 30px;
+    background-color: #90c2e7;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: white;
+  }
+  .option11 {
+    padding: 10px 30px;
+    background-color: #d5ebff;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  .option2 {
+    padding: 10px 15px;
+    background-color: #90c2e7;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+  }
+  .option21 {
+    padding: 10px 15px;
+    background-color: #d5ebff;
+
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
   .outmost_div {
-    position: relative;
+    position: fixed;
     background-color: #ffffff;
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     z-index: 300;
+    overflow: hidden;
+
+    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3917.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1707004800&semt=ais");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .options {
     padding: 30px;
@@ -12,36 +45,33 @@
     align-items: center;
     justify-content: center;
   }
-  .options p {
-    padding: 5px 10px;
-  }
+
   .outer_div {
     position: relative;
     display: flex;
-    z-index: 100;
 
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 00px 0;
   }
 
   .left_div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     padding: 30px;
-    background-color: #deeee8;
+    background-color: #d4eee7;
   }
   .left_div1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 450px;
+    height: 500px;
     padding: 30px;
-    background-color: #deeee8;
+    background-color: #d4eee7;
   }
 
   .heading {
@@ -78,9 +108,9 @@
     font-weight: 500;
   }
   .right_div {
-    width: 450px;
-    height: 400px;
-    background-color: #cfe6dd;
+    width: 500px;
+    height: 500px;
+    background-color: #c2e2da;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,22 +118,24 @@
   }
   .right_div1 {
     width: 500px;
-    height: 450px;
-    background-color: #aed1c3;
+    height: 500px;
+    background-color: #c2e2da;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .input {
     display: block;
     border: none;
     margin: 5px 0;
     height: 40px;
-    font-size: 17px;
+    font-size: 13px;
+    font-weight: 500;
     width: 300px;
     border-radius: 5px;
     padding: 0 10px;
+    background-color: #e4eff2;
   }
 
   .input1 {
@@ -111,10 +143,12 @@
     border: none;
     margin: 5px 0;
     height: 35px;
-    font-size: 17px;
+    font-size: 13px;
     width: 300px;
+    font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
+    background-color: #e4eff2;
   }
   .login {
     font-size: 30px;
@@ -122,27 +156,35 @@
   }
   .login1 {
     font-size: 30px;
-    padding: 10px 30px;
+    padding: 30px 30px;
   }
   .btn_div {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
   }
   .btn {
     border: none;
     height: 50px;
     width: 200px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: bold;
     margin: 30px;
+    background-color: #e4eff2;
+    transition: 300ms ease-in-out;
+  }
+  .btn:hover {
+    background-color: white;
+    transition: 300ms ease-in-out;
   }
 
   .file_div1,
   .file_div2 {
     width: 300px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: #e4eff2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,64 +195,95 @@
   .file_div1 p,
   .file_div2 p {
     font-size: 14px;
+    color: grey;
   }
   .input2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #e4eff2;
     display: block;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
     width: 170px;
     font-size: 12px;
-    color: rgb(0, 0, 0);
+    color: rgb(117, 116, 116);
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 520px) {
+  .option1 {
+    padding: 10px 30px;
+    background-color: #90c2e7;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: white;
+  }
+  .option11 {
+    padding: 10px 30px;
+    background-color: #d5ebff;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  .option2 {
+    padding: 10px 15px;
+    background-color: #90c2e7;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+  }
+  .option21 {
+    padding: 10px 15px;
+    background-color: #d5ebff;
+
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
   .outmost_div {
-    position: relative;
+    position: fixed;
     background-color: #ffffff;
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     z-index: 300;
+    overflow: hidden;
+
+    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3917.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1707004800&semt=ais");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
   .options {
-    padding-top: 30px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .options p {
-    padding: 5px 10px;
-  }
+
   .outer_div {
     position: relative;
     display: flex;
-    z-index: 100;
 
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 00px 0;
   }
 
   .left_div {
     display: none;
     flex-direction: column;
     align-items: center;
-    width: 450px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     padding: 30px;
-    background-color: #deeee8;
+    background-color: #d4eee7;
   }
   .left_div1 {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 450px;
+    height: 500px;
     padding: 30px;
-    background-color: #deeee8;
+    background-color: #d4eee7;
   }
 
   .heading {
@@ -249,7 +322,7 @@
   .right_div {
     width: 100vw;
     height: 500px;
-    background-color: #cfe6dd;
+    background-color: #c2e2da;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,21 +331,23 @@
   .right_div1 {
     width: 100vw;
     height: 500px;
-    background-color: #aed1c3;
+    background-color: #c2e2da;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .input {
     display: block;
     border: none;
     margin: 5px 0;
     height: 40px;
-    font-size: 17px;
-    width: 300px;
+    font-size: 13px;
+    font-weight: 500;
+    width: 350px;
     border-radius: 5px;
     padding: 0 10px;
+    background-color: #e4eff2;
   }
 
   .input1 {
@@ -280,10 +355,12 @@
     border: none;
     margin: 5px 0;
     height: 35px;
-    font-size: 17px;
-    width: 300px;
+    font-size: 13px;
+    width: 350px;
+    font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
+    background-color: #e4eff2;
   }
   .login {
     font-size: 30px;
@@ -291,27 +368,35 @@
   }
   .login1 {
     font-size: 30px;
-    padding: 10px 30px;
+    padding: 30px 30px;
   }
   .btn_div {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
   }
   .btn {
     border: none;
     height: 50px;
     width: 200px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: bold;
     margin: 30px;
+    background-color: #e4eff2;
+    transition: 300ms ease-in-out;
+  }
+  .btn:hover {
+    background-color: white;
+    transition: 300ms ease-in-out;
   }
 
   .file_div1,
   .file_div2 {
-    width: 300px;
+    width: 350px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: #e4eff2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -322,63 +407,94 @@
   .file_div1 p,
   .file_div2 p {
     font-size: 14px;
+    color: grey;
   }
   .input2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #e4eff2;
     display: block;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
     width: 170px;
     font-size: 12px;
-    color: rgb(0, 0, 0);
+    color: rgb(117, 116, 116);
   }
 }
 @media screen and (max-width: 520px) {
+  .option1 {
+    padding: 10px 30px;
+    background-color: #90c2e7;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    color: white;
+  }
+  .option11 {
+    padding: 10px 30px;
+    background-color: #d5ebff;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  .option2 {
+    padding: 10px 15px;
+    background-color: #90c2e7;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: white;
+  }
+  .option21 {
+    padding: 10px 15px;
+    background-color: #d5ebff;
+
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+  }
   .outmost_div {
-    position: relative;
+    position: fixed;
     background-color: #ffffff;
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     z-index: 300;
+    overflow: hidden;
+
+    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3917.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1707004800&semt=ais");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
   .options {
-    padding-top: 30px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .options p {
-    padding: 5px 10px;
-  }
+
   .outer_div {
     position: relative;
     display: flex;
-    z-index: 100;
 
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 00px 0;
   }
 
   .left_div {
     display: none;
     flex-direction: column;
     align-items: center;
-    width: 450px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     padding: 30px;
-    background-color: #deeee8;
+    background-color: #d4eee7;
   }
   .left_div1 {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 500px;
-    height: 450px;
+    height: 500px;
     padding: 30px;
-    background-color: #deeee8;
+    background-color: #d4eee7;
   }
 
   .heading {
@@ -417,7 +533,7 @@
   .right_div {
     width: 100vw;
     height: 500px;
-    background-color: #cfe6dd;
+    background-color: #c2e2da;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,21 +542,23 @@
   .right_div1 {
     width: 100vw;
     height: 500px;
-    background-color: #aed1c3;
+    background-color: #c2e2da;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .input {
     display: block;
     border: none;
     margin: 5px 0;
     height: 40px;
-    font-size: 17px;
-    width: 300px;
+    font-size: 13px;
+    font-weight: 500;
+    width: 350px;
     border-radius: 5px;
     padding: 0 10px;
+    background-color: #e4eff2;
   }
 
   .input1 {
@@ -448,10 +566,12 @@
     border: none;
     margin: 5px 0;
     height: 35px;
-    font-size: 17px;
-    width: 300px;
+    font-size: 13px;
+    width: 350px;
+    font-weight: 500;
     border-radius: 5px;
     padding: 0 10px;
+    background-color: #e4eff2;
   }
   .login {
     font-size: 30px;
@@ -459,27 +579,35 @@
   }
   .login1 {
     font-size: 30px;
-    padding: 10px 30px;
+    padding: 30px 30px;
   }
   .btn_div {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
   }
   .btn {
     border: none;
     height: 50px;
     width: 200px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: bold;
     margin: 30px;
+    background-color: #e4eff2;
+    transition: 300ms ease-in-out;
+  }
+  .btn:hover {
+    background-color: white;
+    transition: 300ms ease-in-out;
   }
 
   .file_div1,
   .file_div2 {
-    width: 300px;
+    width: 350px;
     height: 40px;
-    background-color: #ffffff;
+    background-color: #e4eff2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -490,16 +618,17 @@
   .file_div1 p,
   .file_div2 p {
     font-size: 14px;
+    color: grey;
   }
   .input2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #e4eff2;
     display: block;
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
     width: 170px;
     font-size: 12px;
-    color: rgb(0, 0, 0);
+    color: rgb(117, 116, 116);
   }
 }
