@@ -140,7 +140,7 @@ export default function Home() {
           <div className={styles.right_div}>
             <div className={styles.intro}>
               <FaChessQueen className={styles.logo} />
-              <p className={styles.login1}>Credentials</p>
+              <p className={styles.login}>Credentials</p>
             </div>
             <form onSubmit={handleSubmit}>
               <div className={styles.inputs}>
@@ -185,6 +185,9 @@ export default function Home() {
                 </div>
               </div>
             </form>
+            <p className={styles.tag}>
+              Community for Professionals and Students
+            </p>
           </div>
         </div>
       ) : (
@@ -289,6 +292,9 @@ export default function Home() {
                 </div>
               </div>
             </form>
+            <p className={styles.tag}>
+              Community for Professionals and Students
+            </p>
           </div>
         </div>
       )}
