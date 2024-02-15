@@ -176,6 +176,9 @@
   }
   .btn {
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     width: 200px;
     border-radius: 5px;

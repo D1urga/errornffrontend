@@ -11,7 +11,8 @@ export default function Home() {
   const [isRegistering, setisRegistering] = useState(true);
   const router = useRouter();
   const [user, setUser] = useState();
-  const [data, setData] = useState(null);
+  const [currentuser, setCurrentUser] = useState();
+  const [data, setData] = useState([]);
   const [currentValue, setCurrentValue] = useState(true);
   const [currentValue1, setCurrentValue1] = useState(true);
 
@@ -60,17 +61,19 @@ export default function Home() {
     formData.append("username", registerData.username);
     formData.append("password", registerData.password);
     formData.append("fullName", registerData.fullName);
-    try {
-      const response = await axios({
-        method: "post",
-        url: "https://errornf.onrender.com/api/v1/users/register",
-        data: formData,
-        headers: { "Content-Type": "multipart/form-data" },
+
+    const response = await axios({
+      method: "post",
+      url: "https://errornf.onrender.com/api/v1/users/register",
+      data: formData,
+      headers: { "Content-Type": "multipart/form-data" },
+    })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
       });
-    } catch (error) {
-      console.log(error);
-    }
-    setCurrentValue1(true);
   };
 
   const handleSubmit = async (event) => {
@@ -90,14 +93,17 @@ export default function Home() {
     const data = await response.json();
     setData(data.data);
     localStorage.setItem("user", data.data);
+    localStorage.setItem("currentUser", data.data.user._id);
     setCurrentValue(true);
   };
 
   useEffect(() => {
     const loggedInUser = localStorage.getItem("user");
+    const getcurrentuser = localStorage.getItem("currentUser");
     if (loggedInUser) {
       const foundUser = JSON.stringify(loggedInUser);
       setUser(foundUser);
+      setCurrentUser(getcurrentuser);
       // router.push("/dashboard");
     }
   }, [data]);
@@ -175,13 +181,9 @@ export default function Home() {
                   autoComplete="true"
                 ></input>
                 <div className={styles.btn_div}>
-                  {currentValue ? (
-                    <button className={styles.btn} type="submit">
-                      login
-                    </button>
-                  ) : (
-                    <Indicator />
-                  )}
+                  <button className={styles.btn} type="submit">
+                    {currentValue ? "login" : <Indicator />}
+                  </button>
                 </div>
               </div>
             </form>
@@ -282,13 +284,9 @@ export default function Home() {
                   ></input>
                 </div>
                 <div className={styles.btn_div}>
-                  {currentValue1 ? (
-                    <button className={styles.btn} type="submit">
-                      signIn
-                    </button>
-                  ) : (
-                    <Indicator />
-                  )}
+                  <button className={styles.btn} type="submit">
+                    {currentValue1 ? "signin" : <Indicator />}
+                  </button>
                 </div>
               </div>
             </form>

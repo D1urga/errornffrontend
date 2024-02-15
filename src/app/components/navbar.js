@@ -20,6 +20,7 @@ import {
   FaPlay,
   FaReact,
   FaSignOutAlt,
+  FaUser,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -176,6 +177,17 @@ export default function Navbar() {
         </div>
         <div className={styles.divider}></div>
         <div className={styles.div3}>
+          <div
+            className={index == 10 ? styles.settings2 : styles.settings}
+            onClick={() => {
+              setIndex(10);
+            }}
+          >
+            <FaUser className={styles.settings_logo} />
+            <Link href="/currentUser" className={styles.settings_link}>
+              profile
+            </Link>
+          </div>
           <div
             className={index == 8 ? styles.settings2 : styles.settings}
             onClick={() => {

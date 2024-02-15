@@ -6,6 +6,15 @@ import { useState, useEffect } from "react";
 import { FaEllipsisH, FaEllipsisV } from "react-icons/fa";
 
 export default function Profiles() {
+  // const [userdata, setuserData] = useState([]);
+  // const fetchuser = async () => {
+  //   const res = await fetch(
+  //     "https://errornf.onrender.com/api/v1/users/current-user",
+  //     { credentials: "include" }
+  //   );
+  //   const d = await res.json();
+  //   return setuserData(d.data);
+  // };
   const [inputText, setInputText] = useState("");
   const inputHandler = (e) => {
     const lowerCase = e.target.value.toLowerCase();
@@ -14,7 +23,9 @@ export default function Profiles() {
   const [data, setData] = useState([]);
   const fetchInfo = async () => {
     const res = await fetch(
-      "https://errornf.onrender.com/api/v1/users/allUsers",
+      `https://errornf.onrender.com/api/v1/users/allUsers/${localStorage.getItem(
+        "currentUser"
+      )}`,
       {
         credentials: "include",
       }
@@ -32,7 +43,7 @@ export default function Profiles() {
 
   useEffect(() => {
     fetchInfo();
-  }, []);
+  }, [data]);
   return (
     <div className={styles.outer_div}>
       <div>
@@ -48,7 +59,7 @@ export default function Profiles() {
           filterdData.map((user) => (
             <Link
               key={user._id}
-              href={`/profiles/${user.username}/${user.fullName}/${user.avatar}`}
+              href={`/profiles/${user.username}/${user.fullName}/${user.avatar}/${user.totalFollowers}/${user.totalFollowing}/${user.isRequested}/${user.totalPost}//${user.isFollowing}/${user._id}`}
             >
               <div className={styles.profile_div}>
                 <div className={styles.username}>

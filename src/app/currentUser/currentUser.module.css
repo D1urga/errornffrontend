@@ -1,0 +1,219 @@
+@media screen and (min-width: 900px) {
+  .outer_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 170px;
+    background-color: #ffffff;
+    padding-top: 30px;
+  }
+  .dp {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    padding: 1px;
+    border: 3px solid rgb(138, 161, 166);
+  }
+  .username {
+    padding: 15px 0px;
+    font-size: 18px;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+  .btn {
+    border: none;
+    background-color: #cfe6dd;
+    padding: 10px 50px;
+    margin: 2px 10px;
+    border-radius: 20px;
+  }
+  .data {
+    display: flex;
+    padding: 15px 0;
+  }
+  .data p {
+    margin: 0 30px;
+    font-size: 15px;
+  }
+  .span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .desc {
+    width: 350px;
+    font-size: 14px;
+    padding: 15px 0;
+    color: rgb(62, 62, 62);
+  }
+  .posts {
+    display: flex;
+    padding: 12px 0;
+  }
+  .upload_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100px;
+    margin: 0px 5px;
+    background-color: #ffffff;
+  }
+  .logo {
+    background-color: #cfe6dd;
+    color: rgb(71, 70, 70);
+    font-size: 50px;
+    padding: 14px 14px;
+    border-radius: 40px;
+  }
+  .requests {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  .requests1 {
+    display: none;
+  }
+  .message_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    width: 19vw;
+    background-color: #cfe6dd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .message_opt {
+    display: flex;
+    width: 19vw;
+    padding: 0 1.9vw;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .message {
+    font-weight: 500;
+  }
+  .followRequests {
+  }
+  .request_outer_div {
+    height: 70px;
+    width: 19vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    padding: 7px 0px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: rgb(191, 190, 190) 0px 0px 5px 0px;
+  }
+  .option {
+    display: flex;
+  }
+  .btn1 {
+    border: none;
+    margin: 0 10px;
+    font-size: 12px;
+    background-color: #cfe6dd;
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+  .form_div {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: rgb(225, 224, 224) 0px 0px 5px 0px;
+    padding-top: 30px;
+  }
+  .form_div1 {
+    display: none;
+  }
+  .form_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 19vw;
+  }
+  .form_inner p {
+    color: rgb(61, 61, 61);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .input,
+  .input:focus {
+    border: none;
+    width: 19vw;
+    height: 40px;
+    border-radius: 5px;
+    margin: 4px 0;
+    padding: 0 10px;
+    background-color: #ffffff;
+    box-shadow: rgb(191, 190, 190) 0px 0px 4px 0px;
+  }
+  .input1_div {
+    width: 19vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: rgb(191, 190, 190) 0px 0px 4px 0px;
+  }
+  .btn_div {
+    width: 19vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+    /* box-shadow: rgb(191, 190, 190) 0px 0px 4px 0px; */
+  }
+  .input1,
+  .input1:focus {
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 13vw;
+    /* height: 25px; */
+
+    border: 0px solid #fafcfb;
+    padding: 2px;
+    color: #474646;
+    background-color: #ffffff;
+  }
+  .btn2 {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 40px;
+    /* padding: 10px 7vw; */
+    border-radius: 20px;
+    background-color: #cfe6dd;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+}
+@media screen and (max-width: 520px) {
+}

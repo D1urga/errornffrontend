@@ -1,10 +1,44 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./profile.module.css";
 import { FaEllipsisH, FaInstagram } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 export default function Profile({ params }) {
-  console.log(decodeURIComponent(params.profile[2]));
+  const [data, setData] = useState([]);
+  const [reqdata, setRedata] = useState([]);
+
+  const submitRequest = async (event) => {
+    event.preventDefault();
+
+    const response = await fetch(
+      `https://errornf.onrender.com/api/v1/users/follow/${decodeURIComponent(
+        params.profile[14]
+      )}/${localStorage.getItem("currentUser")}`,
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(reqdata),
+      }
+    );
+    // const data = await response.json();
+  };
+  const fetchInfo = async () => {
+    const res = await fetch(
+      "https://errornf.onrender.com/api/v1/users/current-user",
+      { credentials: "include" }
+    );
+    const d = await res.json();
+    return setData(d.data);
+  };
+
+  useEffect(() => {
+    fetchInfo();
+  }, []);
   return (
     <div className={styles.main_div}>
       <div className={styles.outer_div}>
@@ -27,18 +61,39 @@ export default function Profile({ params }) {
             <p className={styles.title}>
               {decodeURIComponent(params.profile[0])}
             </p>
-            <button className={styles.btn}>follow</button>
+
+            {params.profile[11] === "true" ? (
+              <button className={styles.btn}>requested</button>
+            ) : params.profile[13] === "true" ? (
+              <button className={styles.btn}>following</button>
+            ) : (
+              <form onSubmit={submitRequest}>
+                <button className={styles.btn} type="submit">
+                  follow
+                </button>
+              </form>
+            )}
+
             <FaEllipsisH className={styles.logo} />
           </div>
           <div className={styles.details}>
             <p>
-              <span className={styles.data}>20</span> posts
+              <span className={styles.data}>
+                {decodeURIComponent(params.profile[12])}
+              </span>
+              posts
             </p>
             <p>
-              <span className={styles.data}>11</span> followers
+              <span className={styles.data}>
+                {decodeURIComponent(params.profile[9])}
+              </span>
+              followers
             </p>
             <p>
-              <span className={styles.data}>13</span> following
+              <span className={styles.data}>
+                {decodeURIComponent(params.profile[10])}
+              </span>
+              following
             </p>
           </div>
           <div className={styles.desc}>

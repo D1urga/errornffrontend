@@ -7,6 +7,7 @@
     justify-content: center;
     padding: 40px 0;
   }
+
   .img {
     border-radius: 75px;
     height: 150px;
@@ -75,6 +76,7 @@
   .data {
     font-size: 14px;
     font-weight: 600;
+    margin-right: 5px;
   }
   .bio {
     padding: 0px 0;

@@ -1,8 +1,28 @@
-import React from "react";
-import { useState, useEffect } from "react";
+// import React from "react";
+// import { useState, useEffect } from "react";
 
-function CurrentUser() {
-  const [data, setData] = useState(null);
+// export default function CurrentUser() {
+//   const [data, setData] = useState(null);
+//   const fetchInfo = async () => {
+//     const res = await fetch(
+//       "https://errornf.onrender.com/api/v1/users/current-user",
+//       {
+//         credentials: "include",
+//       }
+//     );
+//     const d = await res.json();
+//     setData(d.data);
+//   };
+//   useEffect(() => {
+//     fetchInfo();
+//   }, []);
+//   return data;
+// }
+
+import React, { useEffect } from "react";
+import { useState } from "react";
+
+export default function CurrentUser() {
   const fetchInfo = async () => {
     const res = await fetch(
       "https://errornf.onrender.com/api/v1/users/current-user",
@@ -10,16 +30,8 @@ function CurrentUser() {
         credentials: "include",
       }
     );
-    const d = await res.json();
-    return setData(d.data);
+    return res;
   };
-  useEffect(() => {
-    fetchInfo();
-  }, [data]);
-  return (
-    <div>
-      <p>{data}</p>
-    </div>
-  );
+
+  return fetchInfo;
 }
-export { CurrentUser };
